@@ -14,7 +14,7 @@ const calculate = (a, b, c) => {
   }
   if (b < sum) {
     maxPriceCash = ((sum - b) * 0.15)
-    console.log('скидкак более 30к ', maxPriceCash);
+    console.log('скидка более 30к ', maxPriceCash);
   }
   if (c = promoMethed) {
     promoCashM = sum * 0.1;
