@@ -1,10 +1,12 @@
 'use strict';
 
-const euro = +prompt('укажите стоимость покупки в евро');
+const converterEuro = (euro, usd, rub) => {
 
-const converter = (a, b) => {
-console.log('стоимость покупки в долларах', euro * a)
-console.log('стоимость покупки в рублях', euro * b)
+  return euro * usd * rub;
 };
 
-converter(1.2, 0.73);
+converterEuro(1, 1.2, 73);
+
+console.log('стоимость в рублях', converterEuro(1, 1.2, 73));
+
+
